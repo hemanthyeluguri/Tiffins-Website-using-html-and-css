@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffins</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    overflow: hidden;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 30px;
+}
+nav .logo {
+    width: 40px;
+    height: 40px;
+    margin: -7px 10px 0 100px;
+}
+nav {
+    display: flex; /* Use flexbox for layout */
+    /* justify-content:space-around; Space between brand and links */
+    align-items: center; /* Center items vertically */
+}
+.nav-brand h3{
+    margin-top: -0px;
+}
+.nav-brand {
+    font-size: 1.5em; /* Adjust font size for the brand name */
+    margin-left: 20px; /* Add some left margin */
+    display: flex;
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-top: -20px;
+    margin-left:900px ;
+}
+
+.nav-links li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+main {
+    padding-top: 80px; /* Adds space at the top to prevent content from being hidden behind the navbar */
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.container {
+    text-align: center;
+    margin: 150px auto;
+}
+
+.log h1 {
+    color: green;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.login-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    margin: auto;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black ;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="nav-brand">
+                <img src="logo.png" alt="Tiffins Logo" class="logo">
+                <h3>Tiffins</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="log">
+            <h1>Tiffins</h1>
+        </div>
+        <div class="login-box">
+            <h2>Log In</h2>
+            <form action="shoping mall.css" method="POST">
+                <div class="input-group">
+                    <label for="email">Email or Phone Number</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Log In</button>
+                <div class="links">
+                    <br>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+            <div class="signup">
+                <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

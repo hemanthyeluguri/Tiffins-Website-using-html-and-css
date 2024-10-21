@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 30px;
+}
+nav .logo {
+    width: 40px;
+    height: 40px;
+    margin: -7px 10px 0 100px;
+}
+nav {
+    display: flex; /* Use flexbox for layout */
+    /* justify-content:space-around; Space between brand and links */
+    align-items: center; /* Center items vertically */
+}
+.nav-brand h3{
+    margin-top: -0px;
+}
+.nav-brand {
+    font-size: 1.5em; /* Adjust font size for the brand name */
+    margin-left: 20px; /* Add some left margin */
+    display: flex;
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-top: -20px;
+    margin-left:900px ;
+}
+
+.nav-links li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+main {
+    padding-top: 80px; /* Adds space at the top to prevent content from being hidden behind the navbar */
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.video-container {
+    width: 100%;
+    height: 647px; /* Specify your preferred height */
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height : 100%;
+    border: none;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 80px;
+}
+
+.card {
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card button{
+    margin: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border: 1px solid #66BB6A;
+    border-radius: 2px;
+}
+
+.card button:hover{
+    background-color: #388E3C;
+}
+
+.card img {
+    width: 80%;
+    padding: 10%;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card img:hover{
+    transform: scale(1.02);
+}
+
+.additional-row {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #eee;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.additional-row-reverse {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #eee;
+    margin: 10px;
+    border-radius: 10px;
+}
+.additional-row-reverse  img{
+    padding: 20px 30px;
+    height: 300px;
+    width: 35%;
+    border-radius: 2px;
+}
+.additional-row img {
+    padding: 20px 30px;
+    height: 300px;
+    width: 35%;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+.container{
+    border: 1px solid black;
+    margin: 80px 30%;
+    background-color: #fff;
+    align-items: center;
+    padding: 20px;
+}
